@@ -7,7 +7,7 @@ import { AuthService } from 'src/app/shared/services/auth.service';
   styleUrls: ['./sign-in.component.css']
 })
 export class SignInComponent implements OnInit{
-  
+  loading: boolean = false; 
   constructor(
     public authService: AuthService
     ) 
@@ -15,4 +15,13 @@ export class SignInComponent implements OnInit{
 ngOnInit(): void {
   
 }
+login(){
+  this.loading = true;
+}
+backgroundImageStyle = {
+  'background-image': 'url("/assets/images/background1.jpeg")',
+  'background-size': 'cover',
+  'background-position': 'center',
+  'align-items': 'center'
+};
 }
