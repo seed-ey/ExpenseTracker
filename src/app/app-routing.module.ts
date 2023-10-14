@@ -9,12 +9,13 @@ const routes: Routes = [
   { path: '', redirectTo: 'body', pathMatch: 'full' },
   { path: 'sign-in', component: SignInComponent},
   { path: 'sign-up', component: SignUpComponent},
-  {
-    path: 'home',
-    loadChildren: () => import('./home/home.module').then(m => m.HomeModule)
-  },
   { path: 'forgot-password', component: ForgotPasswordComponent},
-  { path: 'verify-email-address', component: VerifyEmailComponent},
+
+  // {
+  //   path: 'home',
+  //   loadChildren: () => import('./home/home.module').then(m => m.HomeModule)
+  // },
+  // { path: 'verify-email-address', component: VerifyEmailComponent},
 
 
 ];

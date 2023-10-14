@@ -4,37 +4,37 @@
         </div>
      <div #signupForm class="col-sm-12 col-md-6 col-lg-6 col-xl-6 card-wrapper">
          <div class="d-flex justify-content-center ">
-             <p-card [style]="backgroundImageStyle">
-                 <h4 style="color: #8F5CA3;">Sign-Up</h4>
+             <p-card [style]="{'background-color': '#91bcdd'}">
+                 <h4 style="color: #485b67;">Sign-Up</h4>
                  <p-divider></p-divider>
                  <div class="row">
                     <div #fname class="col">
-                        <h6 style="color: #6B4790;">First Name</h6>
+                        <h6 style="color: #485b67;">First Name</h6>
                         <input type="text" pInputText style="width: 100%;"/>
                     </div>
                     <div #lname class="col">
-                        <h6 style="color: #6B4790;">Last Name</h6>
+                        <h6 style="color: #485b67;">Last Name</h6>
                         <input type="text" pInputText style="width: 100%;"/>
                     </div>
                  </div>
                  <div #email class="pt-2">
-                     <h6 style="color: #6B4790;">Email</h6>
+                     <h6 style="color: #485b67;">Email</h6>
                      <input type="text" pInputText style="width: 100%;"/>
                  </div>
                  <div #password class="row pt-2">
                  <div class="col">
-                     <h6 style="color: #6B4790;">Password</h6>
+                     <h6 style="color: #485b67;">Password</h6>
                      <p-password [toggleMask]="true" [feedback]="true" [inputStyle]="{'width': '100%'}" [style]="{'width': '100%'}"></p-password>           
                  </div>
                  <div class="col">
-                     <h6 style="color: #6B4790;">confirm password</h6>
+                     <h6 style="color: #485b67;">confirm password</h6>
                      <p-password [toggleMask]="true" [inputStyle]="{'width': '100%'}" [style]="{'width': '100%'}"></p-password>           
                  </div>
                  </div>
                  <div class="pt-4 d-flex justify-content-center">
                      <p-button icon="pi pi-unlock" iconPos="right" label="Sign-up" [loading]="loading" (onClick)="signUp()" class="p-button-rounded" type="button"></p-button>
                  </div>
-                 <div class="pt-2 d-flex align-items-center" style="color: #000000;">
+                 <div class="pt-2 d-flex align-items-center" style="color: #ffffff;">
                      Already have an account?&nbsp;<p-button routerLink="/sign-in" label="Click here" styleClass="p-button-link p-0" [link]="true"></p-button>&nbsp;Login.
                  </div>
              </p-card>

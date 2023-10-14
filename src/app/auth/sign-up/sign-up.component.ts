@@ -18,10 +18,10 @@ ngOnInit(): void {
 signUp(){
   this.loading = true;
 }
-backgroundImageStyle = {
-  'background-image': 'url("/assets/images/background1.jpeg")',
-  'background-size': 'cover',
-  'background-position': 'center',
-  'align-items': 'center'
-};
+// backgroundImageStyle = {
+//   'background-image': 'url("/assets/images/background1.jpeg")',
+//   'background-size': 'cover',
+//   'background-position': 'center',
+//   'align-items': 'center'
+// };
 }
