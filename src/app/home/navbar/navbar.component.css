@@ -1,0 +1,24 @@
+.navbar {
+    background-color: #2B5F4E;
+    color: #fff;
+    padding: 10px;
+}
+
+.navbar h2 {
+    text-align: center;
+}
+
+.navbar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.navbar li {
+    display: inline;
+    margin: 0 20px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #fff;
+}

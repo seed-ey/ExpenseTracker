@@ -1,0 +1,32 @@
+
+.sidebar {
+    height: 100%;
+    width: 264px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #4aa587;
+    color: #000;
+    /* padding-top: 20px; */
+}
+.profile-text{
+    font-size: 25px;
+    /* color: #9231aa; */
+    
+}
+.side-btn{
+    /* background-color: #d1daea; */
+    color: #000;
+    align-items: center;
+    height: 50px;
+
+}
+
+.side-btn h3{
+    font-size: 16px;
+    
+
+}
+.side-btn span {
+    margin-right: 10px;
+}
