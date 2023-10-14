@@ -1,0 +1,18 @@
+.back-img {
+    background-image: url('/assets/images/emailverification.jpg');
+    background-size: cover;
+    height: 100vh;
+}
+.container-fluid{
+    background: #6587c7;
+}
+.btn {
+    background: #ffffff; 
+    color: #4365a5; 
+    border:1px solid #0bb69d;
+    border-radius: 20px;
+    /* width: 70%; */
+    box-shadow: 4px 6px 21px -3px rgba(0,0,0,0.63);
+    -webkit-box-shadow: 4px 6px 21px -3px rgba(0,0,0,0.63);
+    -moz-box-shadow: 4px 6px 21px -3px rgba(0,0,0,0.63);
+}

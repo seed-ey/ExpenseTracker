@@ -10,6 +10,8 @@ const routes: Routes = [
   { path: 'sign-in', component: SignInComponent},
   { path: 'sign-up', component: SignUpComponent},
   { path: 'forgot-password', component: ForgotPasswordComponent},
+  { path: 'verify-email-address', component: VerifyEmailComponent},
+
 
   // {
   //   path: 'home',
