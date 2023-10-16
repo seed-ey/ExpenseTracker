@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Chart, registerables } from 'chart.js';
+import { AuthService } from 'src/app/shared/services/auth.service';
+
 // import 'chartjs-plugin-datalabels';
 
 Chart.register(...registerables);
@@ -11,7 +13,10 @@ Chart.register(...registerables);
   styleUrls: ['./body.component.css']
 })
 export class BodyComponent implements OnInit {
-
+  constructor(
+    public authService: AuthService
+    ) 
+    { }
   ngOnInit(): void {
     // this.renderLineChart()
    
