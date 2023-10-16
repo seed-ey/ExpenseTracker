@@ -5,8 +5,8 @@
     position: fixed;
     top: 0;
     left: 0;
-    background-color: #4aa587;
-    color: #000;
+    background-color: #1d1920;
+    color: #fff;
     /* padding-top: 20px; */
 }
 .profile-text{
@@ -16,7 +16,7 @@
 }
 .side-btn{
     /* background-color: #d1daea; */
-    color: #000;
+    color: #fff;
     align-items: center;
     height: 50px;
 

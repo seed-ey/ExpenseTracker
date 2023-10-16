@@ -1,5 +1,50 @@
 .wrapper{
-    background: #c5e8db;
+    background: #f9f8f9;
     height: 800px;
     margin-top: 50px;
 }
+
+.atm-card{
+    height:250px;
+    width: 400px;
+    box-shadow: 4px 6px 21px -3px rgba(0,0,0,0.63);
+    -webkit-box-shadow: 4px 6px 21px -3px rgba(0,0,0,0.63);
+    -moz-box-shadow: 4px 6px 21px -3px rgba(0,0,0,0.63);
+    border-radius: 10px
+}
+progress {
+    width: 600px;
+    height: 15px;
+    /* background-color: #fff; */
+    border-radius: 10px 20px 0px 5px;
+  }
+  
+  progress::-webkit-progress-bar {
+    background-color: #ccc;
+  }
+  
+  progress::-webkit-progress-value {
+    background-color: #000;
+  }
+  .card-buttom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 60px;
+  }
+  .back-img {
+    background-image: url('/assets/images/backmastercard.jpeg');
+    background-size: cover;
+    height:250px;
+    width: 400px;
+}
+.box1 {
+    margin-top: 50px;
+    width: 485px;
+    height: 247px;
+    top: 318px;
+    left: 295px;
+
+}
+
+  
