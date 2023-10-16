@@ -1,6 +1,6 @@
 .wrapper{
     background: #f9f8f9;
-    height: 800px;
+    height: 100%;
     margin-top: 50px;
 }
 
@@ -14,9 +14,10 @@
 }
 progress {
     width: 600px;
-    height: 15px;
+    height: 18px;
     /* background-color: #fff; */
-    border-radius: 10px 20px 0px 5px;
+    border-radius: 10px;
+
   }
   
   progress::-webkit-progress-bar {
@@ -25,6 +26,13 @@ progress {
   
   progress::-webkit-progress-value {
     background-color: #000;
+  }
+  .progress-container {
+    width: 100%;
+    background-color: red;
+    border-radius: 20px;
+    overflow: hidden;
+    height: 18px;
   }
   .card-buttom{
     display: flex;
@@ -46,5 +54,16 @@ progress {
     left: 295px;
 
 }
+.centered-div {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    height: 70px;
+    width: 70px;
+    background-color: #fff;
+    border-radius: 10px;
+  }
+  
+  
 
   

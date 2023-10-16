@@ -7,7 +7,7 @@
     left: 0;
     background-color: #1d1920;
     color: #fff;
-    /* padding-top: 20px; */
+    padding-top: 20px;
 }
 .profile-text{
     font-size: 25px;
@@ -30,3 +30,15 @@
 .side-btn span {
     margin-right: 10px;
 }
+.sidebar-content {
+    margin-left: 50px;
+    border-radius: 0px 20px 0px 0px;
+  }
+  .dashboards-button {
+    background-color: #f9f8f9; 
+    color: #000;
+    /* border-radius: 20px; */
+  }
+  .top{ 
+    border-radius: 0px 0px 0px 50px;
+  }
