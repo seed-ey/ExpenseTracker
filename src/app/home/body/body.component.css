@@ -2,18 +2,40 @@
     background: #f9f8f9;
     height: 100%;
     margin-top: 50px;
-}
 
+}
+.page-content{
+    /* position: absolute; */
+    display: flex;
+    width: 100%;
+    gap: 20px;
+
+}
+.test{
+    width: 50%;
+}
+.test2{
+    width: 50%;
+}
 .atm-card{
     height:250px;
-    width: 400px;
+    min-width: 400px;
     box-shadow: 4px 6px 21px -3px rgba(0,0,0,0.63);
     -webkit-box-shadow: 4px 6px 21px -3px rgba(0,0,0,0.63);
     -moz-box-shadow: 4px 6px 21px -3px rgba(0,0,0,0.63);
     border-radius: 10px
 }
+.card-income{
+    box-shadow: 4px 6px 21px -3px rgba(0,0,0,0.63);
+    -webkit-box-shadow: 4px 6px 21px -3px rgba(0,0,0,0.63);
+    -moz-box-shadow: 4px 6px 21px -3px rgba(0,0,0,0.63); 
+}
+.atm-class{
+    display: flex;
+    padding-top: 20px;
+}
 progress {
-    width: 600px;
+    width: 700px;
     height: 18px;
     /* background-color: #fff; */
     border-radius: 10px;
@@ -29,7 +51,7 @@ progress {
   }
   .progress-container {
     width: 100%;
-    background-color: red;
+    /* background-color: red; */
     border-radius: 20px;
     overflow: hidden;
     height: 18px;
@@ -63,7 +85,15 @@ progress {
     background-color: #fff;
     border-radius: 10px;
   }
-  
+  .test2{
+    background: hsla(186, 33%, 94%, 1);
+    background: linear-gradient(90deg, hsla(186, 33%, 94%, 1) 0%, hsla(216, 41%, 79%, 1) 100%);
+    background: -moz-linear-gradient(90deg, hsla(186, 33%, 94%, 1) 0%, hsla(216, 41%, 79%, 1) 100%);
+    background: -webkit-linear-gradient(90deg, hsla(186, 33%, 94%, 1) 0%, hsla(216, 41%, 79%, 1) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#EBF4F5", endColorstr="#B5C6E0", GradientType=1 );
+  }
+
+
   
 
   

@@ -6,13 +6,13 @@
               <p class="profile-text mx-3">Hi Godseed</p>
             </div>
           </div>
-          <div class="sidebar-content">
-            <div class="dashboard-section">
-                <div class="side-btn dashboards-button mt-5 d-flex">
+         <!-- <div class="sidebar-content">
+                <div class="side-btn active mt-5 d-flex">
+                    <b></b>
+                    <b></b>
                 <span class="material-symbols-sharp">grid_view</span>           
                 <h3>Dashboards</h3>
               </div>
-            </div>
               <div class="side-btn mt-3 d-flex">
                 <span class="material-symbols-sharp">Settings</span>
                 <h3>Settings</h3>
@@ -38,6 +38,18 @@
                 <h3>Analytics</h3>
               </div>        
     
+          </div> -->
+                  
+          
+          <div class="sidebar-content">
+            <div *ngFor="let item of items" class="side-btn d-flex" [ngClass]="{'special-item': item.special, 'active': item === selectedItem}" (click)="selectItem(item)">
+              <b *ngIf="item.special"></b>
+              <b></b>
+              <span class="material-symbols-sharp">{{ item.icon }}</span>
+              <h3>{{ item.text }}</h3>
+            </div>
           </div>
-                  </div>     
+          
+        
+        </div>     
 </div>
