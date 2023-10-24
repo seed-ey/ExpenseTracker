@@ -18,55 +18,136 @@ export class BodyComponent implements OnInit {
     ) 
     { }
   ngOnInit(): void {
-    // this.renderLineChart()
+    this.renderLineChart()
    
   }
   // renderLineChart() {
   //   const linechart = document.getElementById('lineChart') as HTMLCanvasElement;
   //   new Chart(linechart, {
-  //     type: 'line',
-  //     data: {
-  //       labels: [],
-  //       datasets: [
-  //         {
-  //           label: 'Budget',
-  //           data: ['', '', '',],
-  //           backgroundColor: 'rgba(252, 165, 66, 0.2)',
-  //           borderColor: 'rgba(255, 165, 66, 1)',
-  //           tension: 0.4,
-  //           borderWidth: 3,
-  //         },
-  //       ]
+  //       type: 'line',
+  //       data: {
+  //         labels: ['jan','Feb', '','West Africa','', 'UK','','US' ],
+  //         datasets: [
+  //             {
+  //                 label: 'Budget',
+  //                 data: [12, 13, 16,16, 13, 11, 13, 16, 13,15,15,13,13,],
+  //                 backgroundColor: 'rgba(252, 165, 66, 0.2)',
+  //                 borderColor: 'rgba(255, 165, 66, 1)',
+  //                 tension: 0.4,
+  //                 borderWidth: 3,
+  //             },
+  //             {
+  //                 label: 'Actual',
+  //                 data: [13, 15,15, 12,12, 15,15, 12, 14, 13, 15,15,13,13, 30],
+  //                 backgroundColor: 'rgba(132, 85, 185, 1)',
+  //                 borderColor: 'rgba(132, 85, 185, 1)',
+  //                 tension: 0.4,
+  //                 borderWidth: 3,
+  
+  //             },
+  //         ]
   //     },
-  //     options: {
-  //       plugins: {
-  //         legend: {
-  //           display: false,
-  //         },
-  //       },
-  //       layout: {
-  //         padding: {
-  //           left: 30,
-  //           right: 50,
-  //         },
-  //       },
-  //       aspectRatio: 1.7,
-  //       scales: {
-  //         x: {
-  //           grid: {
-  //             display: false, // Disable x-axis grid lines
+        
+  //       options: {
+  //           plugins: {
+  //               legend: {
+  //                   display: false,
+  //               },
   //           },
+  
+  //           layout: {
+  //             padding: {
+  //                 left: 30, 
+  //                 right: 50, 
+  //             },
   //         },
-  //         y: {
-  //           beginAtZero: true,
-  //           grid: {
-  //             display: false, // Disable y-axis grid lines
-  //           },
-  //         },
+  //           aspectRatio: 1.7,
+  //           scales: {
+  //               x: {
+  //                   grid: {
+  //                       drawOnChartArea: false,
+  //                   },
+  //               },
+  //               y: {
+  //                   beginAtZero: true,
+  //                   ticks: {
+  //                     callback: function (tickValue, index, ticks) {
+  //                     return tickValue + '%';  
+  //                     },
+  //                   },
+  //                   grid: {
+  //                       drawOnChartArea: true,
+  //                   },
+  //               }
+  //           }
   //       }
-  //     }
   //   });
-  // }
+  
+  //   }
+  renderLineChart() {
+    const linechart = document.getElementById('lineChart') as HTMLCanvasElement;
+    new Chart(linechart, {
+      type: 'line',
+      data: {
+        labels: [
+          'Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'
+        ],
+        datasets: [
+          {
+            label: 'Budget',
+            data: [12, 13, 16, 16, 13, 11, 13, 16, 13, 15, 15, 13],
+            backgroundColor: 'rgba(252, 165, 66, 0.2)',
+            borderColor: '#32DFCE',
+            tension: 0.4,
+            borderWidth: 3,
+            pointRadius: 0,
+          },
+          {
+            label: 'Actual',
+            data: [13, 15, 15, 12, 12, 15, 15, 12, 14, 13, 15, 15, 13],
+            backgroundColor: 'rgba(132, 85, 185, 1)',
+            borderColor: '#ff0000',
+            tension: 0.5,
+            borderWidth: 3,
+            pointRadius: 0,
+          },
+        ],
+      },
+      options: {
+        plugins: {
+          legend: {
+            display: false,
+          },
+        },
+        layout: {
+          padding: {
+            left: 70,
+            right: 70,
+          },
+        },
+        aspectRatio: 2.1,
+        scales: {
+          x: {
+            grid: {
+              drawOnChartArea: false,
+            },
+          },
+          y: {
+            beginAtZero: true,
+            ticks: {
+              callback: function (tickValue, index, ticks) {
+                return tickValue + '%';
+              },
+            },
+            grid: {
+              drawOnChartArea: false,
+            },
+          },
+        },
+      },
+    });
+  }
+  
   
 
 }
