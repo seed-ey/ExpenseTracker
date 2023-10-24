@@ -12,6 +12,7 @@ import { VerifyEmailComponent } from './auth/verify-email/verify-email.component
 import { SharedModule } from 'primeng/api';
 import { PrimengModule } from './shared/primeng.module';
 import { HomeModule } from './home/home.module';
+import { AuthModule } from './auth/auth.module';
 
 @NgModule({
   declarations: [
@@ -29,6 +30,7 @@ import { HomeModule } from './home/home.module';
     PrimengModule,
     HomeModule,
     BrowserAnimationsModule,
+    AuthModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
