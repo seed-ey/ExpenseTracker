@@ -5,7 +5,7 @@
     <div #loginForm class="col-sm-12 col-md-6 col-lg-6 col-xl-6 card-wrapper">
         <div class="d-flex justify-content-center ">
             <p-card [style]="backgroundImageStyle">
-                <h4 style="color: #8F5CA3;">Sign in to Sparrow Expense manager</h4>
+                <h4 style="color: #8F5CA3;">Sign in to YOUR expense manager</h4>
                 <p-divider></p-divider>
                 <div class="d-flex justify-content-center align-items-center">
                     <p-button icon="pi pi-google" [rounded]="true" [outlined]="true"></p-button>            
@@ -14,14 +14,14 @@
                 <p-divider align="center"><b>OR</b></p-divider>
                 <div #email>
                     <h6 style="color: #6B4790;">Email</h6>
-                    <input type="text" pInputText style="width: 100%;"/>
+                    <input type="text" name="email" [(ngModel)]="userd.email" pInputText style="width: 100%;"/>
                 </div>
                 <div #password class="pt-2">
                 <div class="d-flex justify-content-between">
                     <h6 style="color: #6B4790;">Password</h6>
                     <p-button routerLink="/forgot-password" label="Forgot Password?" styleClass="p-button-link p-0" [link]="true"></p-button>
                 </div>
-                    <p-password [toggleMask]="true" [inputStyle]="{'width': '100%'}" [style]="{'width': '100%'}"></p-password>           
+                    <p-password [toggleMask]="true" [inputStyle]="{'width': '100%'}" [style]="{'width': '100%'}" name="password" [(ngModel)]="userd.password"></p-password>           
                 </div>
                 <div class="pt-2">
                     <p-checkbox [binary]="true" inputId="binary"></p-checkbox>

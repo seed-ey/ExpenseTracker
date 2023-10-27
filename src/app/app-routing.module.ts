@@ -7,18 +7,13 @@ import { VerifyEmailComponent } from './auth/verify-email/verify-email.component
 import { HomeComponent } from './home/home/home.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: 'home', pathMatch: 'full' },
+  { path: '', redirectTo: 'auth', pathMatch: 'full' },
   { path: 'home', component: HomeComponent}, 
   { path: 'auth', loadChildren: () => import('./auth/auth.module').then(m => m.AuthModule) },
   
 
 
-  // {
-  //   path: 'home',
-  //   loadChildren: () => import('./home/home.module').then(m => m.HomeModule)
-  // },
-  // { path: 'verify-email-address', component: VerifyEmailComponent},
-
+  
 
 ];
 

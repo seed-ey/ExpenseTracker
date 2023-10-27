@@ -10,21 +10,21 @@
                  <div class="row">
                     <div #fname class="col">
                         <h6 style="color: #485b67;">First Name</h6>
-                        <input type="text" pInputText style="width: 100%;"/>
+                        <input type="text" name="firstName" [(ngModel)]="userd.firstname"  pInputText style="width: 100%;"/>
                     </div>
                     <div #lname class="col">
                         <h6 style="color: #485b67;">Last Name</h6>
-                        <input type="text" pInputText style="width: 100%;"/>
+                        <input type="text" name="lastName" [(ngModel)]="userd.lastname"  pInputText style="width: 100%;"/>
                     </div>
                  </div>
                  <div #email class="pt-2">
                      <h6 style="color: #485b67;">Email</h6>
-                     <input type="text" pInputText style="width: 100%;"/>
+                     <input type="text" name="email" [(ngModel)]="userd.email"  pInputText style="width: 100%;"/>
                  </div>
                  <div #password class="row pt-2">
                  <div class="col">
                      <h6 style="color: #485b67;">Password</h6>
-                     <p-password [toggleMask]="true" [feedback]="true" [inputStyle]="{'width': '100%'}" [style]="{'width': '100%'}"></p-password>           
+                     <p-password name="password" [(ngModel)]="userd.password"  [toggleMask]="true" [feedback]="true" [inputStyle]="{'width': '100%'}" [style]="{'width': '100%'}"></p-password>           
                  </div>
                  <div class="col">
                      <h6 style="color: #485b67;">confirm password</h6>

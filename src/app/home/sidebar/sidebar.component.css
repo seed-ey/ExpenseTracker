@@ -5,13 +5,14 @@
     position: fixed;
     top: 0;
     left: 0;
-    /* background-color: #1d1920; */
-    background: hsla(213, 77%, 14%, 1);
+    background-color: #dce2ef;
+    /* background-color: #f9f8f9; */
+    /* background: hsla(213, 77%, 14%, 1);
     background: linear-gradient(90deg, hsla(213, 77%, 14%, 1) 0%, hsla(202, 27%, 45%, 1) 100%);
     background: -moz-linear-gradient(90deg, hsla(213, 77%, 14%, 1) 0%, hsla(202, 27%, 45%, 1) 100%);
     background: -webkit-linear-gradient(90deg, hsla(213, 77%, 14%, 1) 0%, hsla(202, 27%, 45%, 1) 100%);
     filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#08203E", endColorstr="#557C93", GradientType=1 );
-    color: #fff;
+    color: #fff; */
     padding-top: 20px;
     
 }
@@ -22,7 +23,7 @@
 }
 .side-btn{
     /* background-color: #d1daea; */
-    color: #fff;
+    color: #000;
     align-items: center;
     height: 50px;
     border-top-left-radius: 20px;

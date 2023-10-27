@@ -13,6 +13,11 @@ import { SharedModule } from 'primeng/api';
 import { PrimengModule } from './shared/primeng.module';
 import { HomeModule } from './home/home.module';
 import { AuthModule } from './auth/auth.module';
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+import { RouterModule } from '@angular/router';
+
+
 
 @NgModule({
   declarations: [
@@ -31,6 +36,11 @@ import { AuthModule } from './auth/auth.module';
     HomeModule,
     BrowserAnimationsModule,
     AuthModule,
+    FormsModule,
+    HttpClientModule,
+    RouterModule,
+
+
   ],
   providers: [],
   bootstrap: [AppComponent]

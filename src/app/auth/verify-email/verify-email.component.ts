@@ -8,6 +8,9 @@ import { AuthService } from 'src/app/shared/services/auth.service';
   styleUrls: ['./verify-email.component.css']
 })
 export class VerifyEmailComponent implements OnInit{
+  constructor(
+    private authService: AuthService,
+  ){}
   email = "godseedchukwuemeka@gmail.com";
   loading: boolean= false
   ngOnInit(): void {
