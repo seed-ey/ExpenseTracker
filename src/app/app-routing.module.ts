@@ -5,10 +5,13 @@ import { SignUpComponent } from './auth/sign-up/sign-up.component';
 import { SignInComponent } from './auth/sign-in/sign-in.component';
 import { VerifyEmailComponent } from './auth/verify-email/verify-email.component';
 import { HomeComponent } from './home/home/home.component';
+import { AnalyticsComponent } from './home/analytics/analytics.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'auth', pathMatch: 'full' },
-  { path: 'home', component: HomeComponent}, 
+  { path: 'home', component: HomeComponent, children: [
+    {path: 'analytics', component: AnalyticsComponent}
+  ]}, 
   { path: 'auth', loadChildren: () => import('./auth/auth.module').then(m => m.AuthModule) },
   
 

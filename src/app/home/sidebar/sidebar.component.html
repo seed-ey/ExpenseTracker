@@ -4,7 +4,7 @@
               <img src="assets/images/cartoonpp.jpeg" class="text-align-center" style="height: 100px; width: 100px; border-radius: 50px; " alt="Egora image" />
             
           </div>
-         <!-- <div class="sidebar-content">
+          <div class="sidebar-content">
                 <div class="side-btn active mt-5 d-flex">
                     <b></b>
                     <b></b>
@@ -31,22 +31,22 @@
                 <span class="material-symbols-sharp">report</span>
                 <h3>Report</h3>
               </div>
-              <div class="side-btn d-flex mt-3">
-                <span class="material-symbols-sharp">insights</span>            
+              <div class="side-btn d-flex mt-3" >
+                <span class="material-symbols-sharp" routerLink="['/home/analytics']">insights</span>            
                 <h3>Analytics</h3>
               </div>        
     
-          </div> -->
+          </div> 
                   
           
-          <div class="sidebar-content mt-5">
+          <!-- <div class="sidebar-content mt-5">
             <div *ngFor="let item of items" class="side-btn d-flex" [ngClass]="{'special-item': item.special, 'active': item === selectedItem}" (click)="selectItem(item)">
               <b *ngIf="item.special"></b>
               <b></b>
               <span class="material-symbols-sharp">{{ item.icon }}</span>
               <h3>{{ item.text }}</h3>
             </div>
-          </div>
+          </div> -->
           
         
         </div>     

@@ -16,6 +16,7 @@ import { AuthModule } from './auth/auth.module';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { RouterModule } from '@angular/router';
+import { AnalyticsComponent } from './home/analytics/analytics.component';
 
 
 
@@ -25,7 +26,8 @@ import { RouterModule } from '@angular/router';
     SignInComponent,
     ForgotPasswordComponent,
     SignUpComponent,
-    VerifyEmailComponent
+    VerifyEmailComponent,
+    AnalyticsComponent
   ],
   imports: [
     BrowserModule,
