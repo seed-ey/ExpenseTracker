@@ -8,19 +8,14 @@ import { Component, OnInit, Renderer2, ElementRef } from '@angular/core';
 export class SidebarComponent implements OnInit {
   constructor(private renderer: Renderer2, private el: ElementRef) {
   }
-  
+  activeButton: string | null = null;
 
-  selectedItem: any = null;
-
-  selectItem(item: any) {
-    this.selectedItem = item;
-    localStorage.setItem('selectedItem', JSON.stringify(item));
-        this.renderer.addClass(this.el.nativeElement.querySelector(`.${item.icon}`), 'active');
-  }
   ngOnInit() {
-    const storedSelectedItem = localStorage.getItem('selectedItem');
-    if (storedSelectedItem) {
-      this.selectedItem = JSON.parse(storedSelectedItem);
-    }
+    this.activeButton = 'button1';
   }
+  setActiveButton(buttonId: string) {
+    this.activeButton = buttonId;
+  }
+  
+  
 }

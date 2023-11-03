@@ -15,7 +15,7 @@ export class AuthService {
   private emailSubject = new BehaviorSubject<string>('');
   email$ = this.emailSubject.asObservable();
 
-  setEmail(email: string) {
+setEmail(email: string) {
     this.emailSubject.next(email);
   }
 
@@ -24,19 +24,18 @@ export class AuthService {
     private router: Router
   ) { }
 
-  postData(UserData: any) :Observable<any>{
+postData(UserData: any) :Observable<any>{
     console.log(UserData)
   return this.http.post<any>(`${this.apiUrlPost}/register`,UserData);
 }    
 
 login(email: string, password: string) {
-  // debugger
   const param :HttpParams = new HttpParams().set('email',email).set('password',password)
   const requestBody = { email, password };
   return this.http.post(`${this.apiUrlPost}/login`, requestBody);
 }
     
-   findAll() {
+findAll() {
     debugger;
     return this.http.get<UserData[]>(this.apiUrlPost +'/getsallUsers');
   }

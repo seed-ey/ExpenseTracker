@@ -5,13 +5,13 @@
             
           </div>
           <div class="sidebar-content">
-                <div class="side-btn active mt-5 d-flex">
+                <div class="side-btn  mt-5 d-flex"  [class.active]="activeButton === 'button1'">
                     <b></b>
                     <b></b>
-                <span class="material-symbols-sharp">grid_view</span>           
+                <span class="material-symbols-sharp" >grid_view</span>           
                 <h3>Dashboards</h3>
               </div>
-              <div class="side-btn mt-3 d-flex">
+              <div class="side-btn mt-3 d-flex" [class.active]="activeButton === 'button2'">
                 <span class="material-symbols-sharp">Settings</span>
                 <h3>Settings</h3>
               </div>
@@ -31,10 +31,11 @@
                 <span class="material-symbols-sharp">report</span>
                 <h3>Report</h3>
               </div>
-              <div class="side-btn d-flex mt-3" >
-                <span class="material-symbols-sharp" routerLink="['/home/analytics']">insights</span>            
+              <div class="side-btn d-flex mt-3" routerLink="/home/analytics"[class.active]="activeButton === 'button2'">
+                <span class="material-symbols-sharp">insights</span>            
                 <h3>Analytics</h3>
-              </div>        
+              </div>
+                     
     
           </div> 
                   
