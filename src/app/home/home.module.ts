@@ -4,6 +4,7 @@ import { HomeComponent } from './home/home.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { BodyComponent } from './body/body.component';
+import { ModalComponent } from './modal/modal.component';
 
 
 
@@ -12,7 +13,8 @@ import { BodyComponent } from './body/body.component';
     HomeComponent,
     SidebarComponent,
     NavbarComponent,
-    BodyComponent
+    BodyComponent,
+    ModalComponent
   ],
   imports: [
     CommonModule

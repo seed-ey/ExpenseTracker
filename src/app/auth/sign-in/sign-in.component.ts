@@ -32,7 +32,7 @@ export class SignInComponent implements OnInit{
       this.authService.login(this.userd.email, this.userd.password).subscribe(response => {
         console.log("2222222222",this.userd);
         this.loading = true;
-        this.router.navigate(['home']);
+        this.router.navigate(['/home']);
   
       });
     }

@@ -1,8 +1,9 @@
 import { Injectable } from '@angular/core';
-import { BehaviorSubject } from 'rxjs';
+import { BehaviorSubject, map } from 'rxjs';
 import { HttpClient, HttpHeaders, HttpParams} from '@angular/common/http';
 import { Router } from '@angular/router';
 import { UserData } from 'src/app/auth/auth';
+import { Income } from 'src/app/home/home/home';
 import { Observable } from 'rxjs';
 
 
@@ -39,5 +40,11 @@ findAll() {
     debugger;
     return this.http.get<UserData[]>(this.apiUrlPost +'/getsallUsers');
   }
+
+ PostExpenses(Income:any): Observable<any> {
+      console.log(Income)
+    return this.http.post<any>(`${this.apiUrlPost}/expenses`, Income)
+      
+ }
   
 }

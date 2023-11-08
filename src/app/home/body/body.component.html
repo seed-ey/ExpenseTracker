@@ -1,4 +1,46 @@
 <div class="wrapper">
+  <div class="d-flex align-items-center">
+    <div class= "d-flex align-items-center justify-content-center dashboard-btn"  (click)="openModal(modalTemplate)">Add Income</div>
+    <div class= "d-flex align-items-center justify-content-center tasks-btn">Add Expenses</div>
+  </div>
+  <ng-template #modalTemplate>
+    <div class="sexyWrapper">
+      <form>
+        <div class="modal-dialog" style="height: 500px;">
+          <div class="modal-content">
+            <div class="fatWrapper">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Add Income</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" (click)="closeModal()" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <div class="form-group">
+                  <label for="expenseName">Income Name</label>
+                  <input type="text" id="expenseName" class="form-control" name="expenseName">
+                  {{income.expense}}
+                </div>
+                <div class="form-group">
+                  <label for="expenseAmount">Income Amount</label>
+                  <input type="number" id="expenseAmount" class="form-control"name="expenseAmount">
+                  {{income.amount}}
+                </div>
+                <div class="form-group">
+                  <label for="expenseDescription">Description</label>
+                  <input type="text" id="expenseDescription" class="form-control" name="expenseDescription">
+                  {{income.description}}
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" (click)="closeModal()">Close</button>
+                <button type="submit" class="btn btn-primary" (submit)="postIncome()">Save Income</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </ng-template>
+  
   <div class="page-content">
     <!-- <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6"> -->
     <div class="test">
@@ -15,7 +57,7 @@
             >
               Available Balance
             </h5>
-            <h3 class="mx-3" style="font-weight: 700">$150,000</h3>
+            <h3 class="mx-3" style="font-weight: 700">{{ income.amount | currency:'Naira':'symbol':'1.2-2' }}</h3>
             <div class="card-buttom">
               <p class="mx-3" style="font-weight: 600">****9017</p>
               <img
@@ -68,8 +110,8 @@
                       </svg>
                   
                   <div style="padding: 35px;">
-                    <h6>income</h6>
-                    <h4>$5,000</h4>
+                    <h6>Add income</h6>
+                    <h4>{{ income.amount | currency:'Naira':'symbol':'1.2-2' }}</h4>
                   </div>
                 </div>
                 <div class="card card-income mt-4 mx-3" style="display: flex; align-items: center; flex-direction: row; height: 100px; width: 300px;">

@@ -1,4 +1,4 @@
-export class expenses{
+export class Income{
     id!: number;
     expense :string = '' ;
     amount!: number 

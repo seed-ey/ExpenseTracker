@@ -17,6 +17,9 @@ import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { RouterModule } from '@angular/router';
 import { AnalyticsComponent } from './home/analytics/analytics.component';
+import { ModalModule } from 'ngx-bootstrap/modal';
+import { MatDialogModule } from '@angular/material/dialog'
+
 
 
 
@@ -41,6 +44,10 @@ import { AnalyticsComponent } from './home/analytics/analytics.component';
     FormsModule,
     HttpClientModule,
     RouterModule,
+    ModalModule.forRoot(),
+    FormsModule,
+    // MatDialogModule
+
 
 
   ],
